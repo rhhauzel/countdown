@@ -4,11 +4,6 @@ import { connection } from "next/server";
 import data from "@/app/data/data.json";
 
 export default async function Page() {
- const Keimah = "2026-12-21T08:55:00";
-  const Tei = "2026-12-23T17:00:00";
-  const Basil = "2026-12-19T16:00:00";
-  const Eli = "2026-12-15T08:00:00";
-
   await connection();
  
    return (
@@ -25,7 +20,8 @@ export default async function Page() {
          
          {data.map((item) => (
           <div key={String(item.SlNo)} className="mt-8">
-            {item.Name} - <CountdownTimer targetDate={item.Date} />
+            {item.Name} ({format(new Date(item.Date), "dd-MMM-yyyy HH:mm")})
+            <CountdownTimer targetDate={item.Date} />
           </div>
          ))}
        </div>
