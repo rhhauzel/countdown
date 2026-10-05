@@ -9,7 +9,7 @@ await connection();
    return (
      <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-white dark:bg-gray-900 transition-colors">
        <div className="space-y-6 text-center">
-         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl text-gray-900 dark:text-white">
+         <h1 className="text-lg font-extrabold tracking-tight sm:text-sm text-gray-900 dark:text-white">
            We are We are going home soon
          </h1>
          <div className="flex justify-between">
