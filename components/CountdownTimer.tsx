@@ -58,7 +58,7 @@ export default function CountdownTimer({ targetDate }: CountdownTimerProps) {
   if (isExpired) {
     return (
       <div className="text-center text-2xl font-bold text-red-500">
-        🎉 The event has started!
+        🎉 Aready left for home!
       </div>
     );
   }
